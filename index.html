@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Erick Campuzano">
+    <link href="calcu.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&family=Inter:wght@200;300;400;500;700&family=Lexend:wght@200;300;400&family=Montserrat:ital,wght@0,200;0,300;1,200&family=Noto+Sans:ital@1&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap" rel="stylesheet">
+
+   
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="cerrarPopup" class="cerrar-popup">&times;</span>
+            <h2 style="margin: 4px 4px; text-align: center;">¡Hola como estas! </h2>
+            <p style="font-weight: normal;
+             width: 90%;
+             margin: 10px 10px;
+             text-align: center;">Ingresa tu nombre por favor: </p>  
+            <input type="text" id="nombreInput" placeholder="Tu nombre" 
+            style="background-color: rgb(75, 72, 72);
+            color: white;
+            width: 90%;
+            margin: 10px 10px;
+            padding: 10px;">
+            <button id="aceptarBtn" style="background-color: rgb(31, 29, 29);
+            box-shadow: 0 0 10px rgba(248, 238, 238, 0.3);
+            width: 90%;
+            font-weight: bold;
+            margin: 10px 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            color: white;
+            padding: 8px;">¡Hecho!</button>
+        </div>
+    </div>
+
+  
+    
+
+    <!-- Esto es un comentario -->
+   
+
+    <header>
+         <p><span class="nombre-mostrado" id="nombreMostrado"></span></p>
+        <p>Esta es tu Calculadora Simple ;D</p>
+    </header>
+
+  
+    <main>
+        <div class="principal">
+
+
+            <div class="calculadora-principal">
+                
+
+                <!-- <div class="contenedor"> -->
+                    <input type="text" id="salida" class="salida"  readonly>
+                    
+                    
+                    <button value="AC" id="reiniciar" class="ac" onclick="reiniciar()">AC</button>
+                    <button  id="dividir" class="dividir" onclick="mostrar('/')">/ </button>
+                    <button  value="-"class="restar" onclick="mostrar('-')" >-</button>
+                    <button  name="7" value="7" id="siete" class="boton"  onclick="mostrar('7')">7</button>
+                    <button  value="8" id="ocho" class="boton"  onclick="mostrar('8')" >8</button>
+                    <button  value="9" id="nueve" class="boton" onclick="mostrar('9')">9</button>
+                    <button  value="*" id="por" class="por" onclick="mostrar('*')">*</button>
+                    <button  value="4" id="cuatro" class="boton" onclick="mostrar('4')">4</button>
+                    <button  value="5" id="cinco" class="boton" onclick="mostrar('5')">5</button>
+                    <button  value="6" id="seis" class="boton" onclick="mostrar('6')">6</button>
+                    <button  value="+"class="sumar" onclick="mostrar('+')">+</button>
+                    <button  value="1" id="uno" class="boton" onclick="mostrar('1')">1</button>
+                    <button  value="2" id="dos" class="boton" onclick="mostrar('2')">2</button>
+                    <button  value="3" id="tres" class="boton" onclick="mostrar('3')">3</button>
+                    <button  value="0" id="cero" class="cero" onclick="mostrar('0')">0</button>
+                    <button  value="." class="punto" onclick="mostrar('.')">.</button>
+                    <button  value="=" class="igual" onclick="calcular()">=</button>
+
+                <!-- </div> -->
+
+            </div>
+        </div>
+        
+    </main>
+
+
+    <footer class="footer">
+        <p> Gracias por utilizarla, ten buen día</p>
+    </footer>
+
+    <script src="calcu.js"></script>
+
+</body>
+</html>
